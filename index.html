@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Adwaith Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-body">
 
-    <div class="login-container">
-        <div class="login-box">
-            <h1>Welcome</h1>
-            <p>Login to view my digital portfolio</p>
+<body>
 
-            <input type="text" id="email" placeholder="Enter your email">
-            <input type="text" id="phone" placeholder="Enter your phone number">
+<div class="left">
+  <h1>Adwaith Gireesh</h1>
+  <p>Web Developer</p>
 
-            <p id="error-msg"></p>
+  <div class="menu">
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </div>
+</div>
 
-            <button onclick="login()">Login</button>
-        </div>
-    </div>
+<div class="right" id="content">
+  <h2>About Me</h2>
+  <p>I am a developer focused on building clean and modern web apps.</p>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
